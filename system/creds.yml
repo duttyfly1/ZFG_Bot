@@ -3,7 +3,6 @@ version: 4
 # Bot token. Do not share with anyone ever -> https://discordapp.com/developers/applications/
 token: ODM1NjYyODgyNjY5NTkyNTc3.YISttQ.mWUmluzh-iyydHSdUDw_lc0iNes
 # List of Ids of the users who have bot owner permissions
-# **DO NOT ADD PEOPLE YOU DON'T TRUST**
 ownerIds:
   - 428542685998219264
   - 266695014569082890
