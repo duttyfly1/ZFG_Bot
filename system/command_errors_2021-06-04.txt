@@ -1,0 +1,17 @@
+[22:52-2021-06-04]
+Discord.Net.HttpException: The server responded with error 10003: Unknown Channel
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendJsonAsync[TResponse](String method, String endpoint, Object payload, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.CreateMessageAsync(UInt64 channelId, CreateMessageParams args, RequestOptions options)
+   at Discord.Rest.ChannelHelper.SendMessageAsync(IMessageChannel channel, BaseDiscordClient client, String text, Boolean isTTS, Embed embed, AllowedMentions allowedMentions, RequestOptions options)
+   at Discord.WebSocket.SocketTextChannel.Discord.IMessageChannel.SendMessageAsync(String text, Boolean isTTS, Embed embed, RequestOptions options, AllowedMentions allowedMentions)
+   at NadekoBot.Modules.Administration.Administration.DelTxtChanl(ITextChannel toDelete)
+   at Discord.Commands.ModuleClassBuilder.<>c__DisplayClass6_0.<<BuildCommand>g__ExecuteCallback|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteInternalAsync(ICommandContext context, Object[] args, IServiceProvider services)
+   at Discord.Commands.CommandInfo.ExecuteAsync(ICommandContext context, IEnumerable`1 argList, IEnumerable`1 paramList, IServiceProvider services)
+------
