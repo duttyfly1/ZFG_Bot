@@ -14,7 +14,7 @@ totalShards: 1
 # Login to https://console.cloud.google.com, create a new project, go to APIs & Services -> Library -> YouTube Data API and enable it.
 # Then, go to APIs and Services -> Credentials and click Create credentials -> API key.
 # Used only for Youtube Data Api (at the moment).
-googleApiKey: AIzaSyBGDubYNOyjthy2e0RYnRKLvi7pmmAL_to
+googleApiKey:
 # Settings for voting system for discordbots. Meant for use on global Nadeko.
 votes:
 # top.gg votes service url
